@@ -13,6 +13,7 @@
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- CSS Files -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
   <link href="./assets/css/index.css?v=2.2.1" rel="stylesheet" />
@@ -73,13 +74,13 @@
               <a class="dropdown-item" data-scroll="true" data-id="#headers" href="https://transition-website.herokuapp.com">
                 <i class="fa fa-users"></i> For HackMerced's Team
               </a>
-              <a class="dropdown-item" data-scroll="true" data-id="#features" href="#sponsor">
+              <a class="dropdown-item" data-scroll="true" data-id="#features" href="#">
                 <i class="fa fa-medkit"></i> Sponsor
               </a>
-              <a class="dropdown-item" data-scroll="true" data-id="#blogs" href="applications.html" target="_blank">
+              <a class="dropdown-item" data-scroll="true" data-id="#blogs" href="#">
                 <i class="fa fa-info"></i> Volunteer
               </a>
-              <a class="dropdown-item" data-scroll="true" data-id="#teams" href="applications.html" target="_blank">
+              <a class="dropdown-item" data-scroll="true" data-id="#teams" href="#">
                 <i class="fa fa-user"></i> Applicant
               </a>
             </div>
@@ -132,7 +133,23 @@
         <div class="col-md-4">
           <div class="info">
             <div class="icon icon-info">
-              <i class="nc-icon nc-user-run"></i>
+              <div id="hrGlass" class="fa">
+                <script>
+                  function hourglass() {
+                    var a;
+                    a = document.getElementById("hrGlass");
+                    a.innerHTML = "&#xf251;";
+                    setTimeout(function () {
+                      a.innerHTML = "&#xf252;";
+                    }, 1000);
+                    setTimeout(function () {
+                      a.innerHTML = "&#xf253;";
+                    }, 2000);
+                  }
+                  hourglass();
+                  setInterval(hourglass, 3000);
+                  </script>
+                </div>
             </div>
             <div class="description">
               <h4 class="info-title">Length</h4>
@@ -143,7 +160,23 @@
         <div class="col-md-4">
           <div class="info">
             <div class="icon icon-success">
-              <i class="nc-icon nc-planet"></i>
+              <div id="sun" class="fa" style="color: #F08080">
+                <script>
+                  function sun() {
+                    var a;
+                    a = document.getElementById("sun");
+                    a.innerHTML = "&#xf111;";
+                    setTimeout(function () {
+                      a.innerHTML = "&#xf1db;";
+                    }, 1000);
+                    setTimeout(function () {
+                      a.innerHTML = "&#xf185;";
+                    }, 2000);
+                  }
+                  sun();
+                  setInterval(sun, 3000);
+                  </script>
+                </div>
             </div>
             <div class="description">
               <h4 class="info-title">Theme</h4>
@@ -154,7 +187,20 @@
         <div class="col-md-4">
           <div class="info">
             <div class="icon icon-warning">
-              <i class="nc-icon nc-satisfied"></i>
+              <div id="smiley" class="fa">
+                <script>
+                  function smile() {
+                    var a;
+                    a = document.getElementById("smiley");
+                    a.innerHTML = "&#xf11a;";
+                    setTimeout(function () {
+                      a.innerHTML = "&#xf118;";
+                    }, 1000);
+                  }
+                  smile();
+                  setInterval(smile, 2000);
+                  </script>
+                </div>
             </div>
             <div class="description">
               <h4 class="info-title">Who Can Attend?</h4>
@@ -170,7 +216,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto">
-          <h2 class="title" style="font-weight: 900;">2017 Sponsors</h2>
+          <h2 id="sponsorID" class="title" style="font-weight: 900;">2017 Sponsors</h2>
           <h5 style="font-weight: 900;">Are you interested in sponsoring our hackathon? You can check out our sponsorship package! You can contact us at
             <a href="mailto:sponsorship@hackmerced.com?subject=Sponsorship&body=Dear HackMerced" style="font-weight: 900; color: rgb(33, 210, 242)">sponsorship@hackmerced.com</a>
           </h5>
