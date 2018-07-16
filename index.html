@@ -36,6 +36,12 @@
       max-width: 10em;
       padding-bottom: 1em;
     }
+
+    .zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+    }
   </style>
 </head>
 
@@ -214,7 +220,7 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
       </div>
     </div>
   </div>
-  
+
   <!-- start of extra faqs-->
   <div class="section text-center" name="faqs" style="background-color: #2e448f">
     <h2 class="text-center title" style="font-weight:bold; color:#FFFFFF">FAQS</h2>
@@ -314,48 +320,86 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
       <br />
       <div class="row">
         <div class="col">
-          <img src="assets/img/sponsors/Google.png" class="img-rounded img-responsive sponsor-lg" alt="Google" />
+          <div class="zoom">
+            <a href="https://www.google.com/intl/en/about/" target="_blank">
+              <img src="assets/img/sponsors/Google.png" class="img-rounded img-responsive sponsor-lg" alt="Google" />
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="zoom">
+            <a href="https://www.arangodb.com/" target="_blank">
+              <img src="assets/img/sponsors/ArangoDB.png" class="img-rounded img-responsive sponsor-md" alt="ArangoDB" />
+            </a>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <img src="assets/img/sponsors/DataStack.webp" class="img-rounded img-responsive sponsor-md" alt="DataStack" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://thedroneracingleague.com/" target="_blank">
+              <img src="assets/img/sponsors/DRS.png" class="img-rounded img-responsive sponsor-lg" alt="DRL" />
+            </a>
+          </div>
         </div>
-        <div class="col">
-          <img src="assets/img/sponsors/ArangoDB.png" class="img-rounded img-responsive sponsor-md" alt="ArangoDB" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="http://www.51fiftyenergydrink.com/" target="_blank">
+              <img src="assets/img/sponsors/51FiftyEnergyDrink.png" class="img-rounded img-responsive sponsor-sm" alt="51 Fifty Energy Drink"
+              />
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="assets/img/sponsors/51FiftyEnergyDrink.png" class="img-rounded img-responsive sponsor-sm" alt="51 Fifty Energy Drink"
-          />
-        </div>
-        <div class="col">
-          <img src="assets/img/sponsors/UltraPress.png" class="img-rounded img-responsive sponsor-lg" alt="UltraPress" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="assets/img/sponsors/UCM.png" class="img-rounded img-responsive sponsor-lg" alt="UC Merced" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="assets/img/sponsors/ASUCM.png" class="img-rounded img-responsive sponsor-lg" alt="ASUCM" />
-        </div>
-        <div class="col">
-          <img src="assets/img/sponsors/Vanguard.png" class="img-rounded img-responsive sponsor-lg" alt="Vanguard" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://ultrapress.com/" target="_blank">
+              <img src="assets/img/sponsors/UltraPress-1.png" class="img-rounded img-responsive sponsor-lg" alt="UltraPress" />
+            </a>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <img src="assets/img/sponsors/DRS.png" class="img-rounded img-responsive sponsor-lg" alt="DRS" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://engineering.ucmerced.edu/" target="_blank">
+              <img src="assets/img/sponsors/UCM.png" class="img-rounded img-responsive sponsor-lg" alt="UC Merced" />
+            </a>
+          </div>
         </div>
-        <div class="col">
-          <img src="assets/img/sponsors/OSL.jpeg" class="img-rounded img-responsive sponsor-md" alt="OSL" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <img src="assets/img/sponsors/DataStack.webp" id="DS_img" class="img-rounded img-responsive sponsor-md" alt="DataStack" title="DataStack" />
+          </div>
         </div>
-        <div class="col">
-          <img src="assets/img/sponsors/UCM_IT.png" class="img-rounded img-responsive sponsor-md" alt="IT" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://engr-advising.ucmerced.edu/e-week" target="_blank">
+              <img src="assets/img/sponsors/Vanguard-1.png" class="img-rounded img-responsive sponsor-lg" alt="Vanguard" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://asucm.ucmerced.edu/" target="_blank">
+              <img src="assets/img/sponsors/ASUCM.png" class="img-rounded img-responsive sponsor-lg" alt="ASUCM" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://it.ucmerced.edu/node/1" target="_blank">
+              <img src="assets/img/sponsors/UCM_IT.png" id="UCMIT_img" class="img-rounded img-responsive sponsor-md" alt="IT" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://studentlife.ucmerced.edu/" target="_blank">
+              <img src="assets/img/sponsors/OSL.jpeg" class="img-rounded img-responsive sponsor-md" alt="OSL" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
