@@ -2643,7 +2643,20 @@ pre.prettyprint {
   top: 0;
   font-weight: 600;
   margin-top: 10px;
-  right: -15px;
+  right: -7%;
+}
+
+.presentation-page .presentation-title {
+  font-weight: 700;
+  font-size: 8em;
+  margin: 0;
+  color: #FFFFFF;
+  background: #fbf8ec;
+  background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+  background: -webkit-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+  background: linear-gradient(to bottom, #FFFFFF 35%, #4e6773 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 991px) {
@@ -2658,18 +2671,10 @@ pre.prettyprint {
     margin-top: 10px;
     right: -10px;
   }
-}
 
-.presentation-page .presentation-title {
-  font-weight: 700;
-  margin: 0;
-  color: #FFFFFF;
-  background: #fbf8ec;
-  background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
-  background: -webkit-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
-  background: linear-gradient(to bottom, #FFFFFF 35%, #4e6773 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  .presentation-page .presentation-title {
+    font-size: 4em;
+  }
 }
 
 .presentation-page .presentation-subtitle {
