@@ -15525,3 +15525,13 @@ License - nucleoapp.com/license/
 /* all icon font classes list here */
 
 /*# sourceMappingURL=kit-pro.css.map */
+
+
+@media only screen and (max-width: 991px) {
+  .navbar-toggler { 
+    position:fixed;
+    right:0px;
+    top:0px;
+  }
+}
+
