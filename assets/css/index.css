@@ -15517,3 +15517,10 @@ License - nucleoapp.com/license/
 /* all icon font classes list here */
 
 /*# sourceMappingURL=kit-pro.css.map */
+
+@media only screen and (max-width: 991px) {
+   #mlh-trust-badge{
+   	position:fixed;
+	right:150px;
+	top:0px;
+}
