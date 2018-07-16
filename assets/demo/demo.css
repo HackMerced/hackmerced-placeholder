@@ -2135,6 +2135,7 @@ pre.prettyprint {
 .presentation-page .section-summary {
   margin-top: -120px;
   padding-top: 165px;
+  background: linear-gradient(to bottom, #171a2b 0%, #2c3f7fed 100%);
 }
 
 .presentation-page .components-container {
@@ -2645,8 +2646,21 @@ pre.prettyprint {
   right: -15px;
 }
 
+@media only screen and (max-width: 991px) {
+  .presentation-page .title-brand .type {
+    position: absolute;
+    font-size: 13px;
+    background: #132026;
+    padding: 4px;
+    border-radius: 4px;
+    top: 0;
+    font-weight: 600;
+    margin-top: 10px;
+    right: -10px;
+  }
+}
+
 .presentation-page .presentation-title {
-  font-size: 8em;
   font-weight: 700;
   margin: 0;
   color: #FFFFFF;
