@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8" />
   <link rel="icon" type="image/png" href="./assets/img/hackmerced_logo.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -34,6 +35,12 @@
       max-width: 10em;
       padding-bottom: 1em;
     }
+
+    .zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+    }
   </style>
 </head>
 
@@ -55,7 +62,7 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
       <div class="collapse navbar-collapse" data-nav-image="./assets/img/blurred-image-1.jpg" data-color="orange">
         <ul class="navbar-nav ml-auto">
           <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" style="color: #000000; font-size: 15px">
               Projects </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-primary">
               <a href="https://hackmerced-2017f.devpost.com/submissions" class="dropdown-item">
@@ -67,7 +74,7 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
             </div>
           </li>
           <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown">
+            <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown" style="color: #000000; font-size: 15px">
               Sign Up
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
@@ -86,7 +93,7 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
             </div>
           </li>
           <li class="dropdown nav-item">
-            <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink1" data-toggle="dropdown">
+            <a href="#" class="dropdown-toggle nav-link" id="navbarDropdownMenuLink1" data-toggle="dropdown" style="color: #000000; font-size: 15px">
               Contact Us
             </a>
             <div class="dropdown-menu dropdown-menu-right dropdown-primary" aria-labelledby="navbarDropdownMenuLink1">
@@ -128,91 +135,11 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
         <h2 class="presentation-subtitle text-center" style="font-weight:bold">What is HackMerced?</h2>
         <br>
         <br>
-        <p style="font-weight:bold; color:white">HackMerced is a 36 hour event where you create a project based on a theme competing with others. Situated at UC Merced in Merced, California, we will also be having a variety of workshops as well as other fun social events to aid in your project creations as well as more tools for you to learn! There will be rewards for each sponsored theme, so bunker down and get ready to bring your A-game!</p>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="info">
-            <div class="icon icon-info">
-              <div id="hrGlass" class="fa">
-                <script>
-                  function hourglass() {
-                    var a;
-                    a = document.getElementById("hrGlass");
-                    a.innerHTML = "&#xf251;";
-                    setTimeout(function () {
-                      a.innerHTML = "&#xf252;";
-                    }, 1000);
-                    setTimeout(function () {
-                      a.innerHTML = "&#xf253;";
-                    }, 2000);
-                  }
-                  hourglass();
-                  setInterval(hourglass, 3000);
-                  </script>
-                </div>
-            </div>
-            <div class="description">
-              <h4 class="info-title">Length</h4>
-              <p>36 Hour Hackathon</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="info">
-            <div class="icon icon-success">
-              <div id="sun" class="fa" style="color: #F08080">
-                <script>
-                  function sun() {
-                    var a;
-                    a = document.getElementById("sun");
-                    a.innerHTML = "&#xf111;";
-                    setTimeout(function () {
-                      a.innerHTML = "&#xf1db;";
-                    }, 1000);
-                    setTimeout(function () {
-                      a.innerHTML = "&#xf185;";
-                    }, 2000);
-                  }
-                  sun();
-                  setInterval(sun, 3000);
-                  </script>
-                </div>
-            </div>
-            <div class="description">
-              <h4 class="info-title">Theme</h4>
-              <p>The Outdoors</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="info">
-            <div class="icon icon-warning">
-              <div id="smiley" class="fa">
-                <script>
-                  function smile() {
-                    var a;
-                    a = document.getElementById("smiley");
-                    a.innerHTML = "&#xf11a;";
-                    setTimeout(function () {
-                      a.innerHTML = "&#xf118;";
-                    }, 1000);
-                  }
-                  smile();
-                  setInterval(smile, 2000);
-                  </script>
-                </div>
-            </div>
-            <div class="description">
-              <h4 class="info-title">Who Can Attend?</h4>
-              <p>Anyone with the spirit to hack!</p>
-            </div>
-          </div>
-        </div>
+        <p style="font-weight:bold; color:white">HackMerced, a 36 hour hackathon focused on your designs, algorithms, and impact! We have a variety of workshops and mentors to aid you in your development. Along with fun social events throughout the hackathon! There will be rewards for each sponsored theme. So, Bunker down and get ready to bring your A-game!</p>
       </div>
     </div>
   </div>
-  
+
   <!-- start of extra faqs-->
   <div class="section text-center" name="faqs" style="background-color: #2e448f">
     <h2 class="text-center title" style="font-weight:bold; color:#FFFFFF">FAQS</h2>
@@ -222,7 +149,7 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
           <div class="card" style="background-color:#afdfeb">
             <div class="card-body">
               <h5 class="card-title" style="font-weight:bold">Are there any requirements to attend?</h5>
-              <p class="card-text" style="color:#000000">As long as you're an undergraduate you're good! Refer to the MLH code of conduct for any unsure.</p>
+              <p class="card-text" style="color:#000000">As long as you're an undergraduate you're good! Refer to the MLH code of conduct for any uncertainties.</p>
             </div>
           </div>
         </div>
@@ -246,7 +173,7 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
           <div class="card" style="background-color:#afdfeb">
             <div class="card-body">
               <h5 class="card-title" style="font-weight:bold">How do teams work?</h5>
-              <p class="card-text" style="color:#000000">You can be in teams of up two 4 people and it is highly encouraged to find one to participate with!</p>
+              <p class="card-text" style="color:#000000">You can be in teams of up to 4 people and it is highly encouraged to find one to participate with!</p>
             </div>
           </div>
         </div>
@@ -254,7 +181,7 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
           <div class="card" style="background-color:#afdfeb">
             <div class="card-body">
               <h5 class="card-title" style="font-weight:bold">What are the prizes?</h5>
-              <p class="card-text" style="color:#000000">We will announce as soon as possible!</p>
+              <p class="card-text" style="color:#000000">We will announce them as soon as possible!</p>
             </div>
           </div>
         </div>
@@ -270,7 +197,7 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
           <div class="card" style="background-color:#afdfeb">
             <div class="card-body">
               <h5 class="card-title" style="font-weight:bold">Is there anything I should bring?</h5>
-              <p class="card-text" style="color:#000000">Yourself and a goodmindset to hack!</p>
+              <p class="card-text" style="color:#000000">Yourself and a good mindset to hack!</p>
             </div>
           </div>
         </div>
@@ -285,8 +212,8 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
         </div>
           <h2 style="color:#FFFFFF">Any other questions?</h2>
           <div class="answer" style="color:#FFFFFF">
-            Feel free to message us at: 
-            <a href="mailto:mailto:general@hackmerced.com?subject=HackMerced Questions&body=Dear HackMerced,">general@hackmerced.com</a>! 
+            Feel free to message us at:
+            <a href="mailto:mailto:general@hackmerced.com?subject=HackMerced Questions&body=Dear HackMerced,">general@hackmerced.com</a>!
           </div>
         </div>
       </div>
@@ -312,48 +239,86 @@ background: linear-gradient(180deg, rgba(251,204,210,1) 0%, rgba(16,107,168,1) 4
       <br />
       <div class="row">
         <div class="col">
-          <img src="assets/img/sponsors/Google.png" class="img-rounded img-responsive sponsor-lg" alt="Google" />
+          <div class="zoom">
+            <a href="https://www.google.com/intl/en/about/" target="_blank">
+              <img src="assets/img/sponsors/Google.png" class="img-rounded img-responsive sponsor-lg" alt="Google" />
+            </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="zoom">
+            <a href="https://www.arangodb.com/" target="_blank">
+              <img src="assets/img/sponsors/ArangoDB.png" class="img-rounded img-responsive sponsor-md" alt="ArangoDB" />
+            </a>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <img src="assets/img/sponsors/DataStack.webp" class="img-rounded img-responsive sponsor-md" alt="DataStack" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://thedroneracingleague.com/" target="_blank">
+              <img src="assets/img/sponsors/DRS.png" class="img-rounded img-responsive sponsor-lg" alt="DRL" />
+            </a>
+          </div>
         </div>
-        <div class="col">
-          <img src="assets/img/sponsors/ArangoDB.png" class="img-rounded img-responsive sponsor-md" alt="ArangoDB" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="http://www.51fiftyenergydrink.com/" target="_blank">
+              <img src="assets/img/sponsors/51FiftyEnergyDrink.png" class="img-rounded img-responsive sponsor-sm" alt="51 Fifty Energy Drink"
+              />
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="assets/img/sponsors/51FiftyEnergyDrink.png" class="img-rounded img-responsive sponsor-sm" alt="51 Fifty Energy Drink"
-          />
-        </div>
-        <div class="col">
-          <img src="assets/img/sponsors/UltraPress.png" class="img-rounded img-responsive sponsor-lg" alt="UltraPress" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="assets/img/sponsors/UCM.png" class="img-rounded img-responsive sponsor-lg" alt="UC Merced" />
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <img src="assets/img/sponsors/ASUCM.png" class="img-rounded img-responsive sponsor-lg" alt="ASUCM" />
-        </div>
-        <div class="col">
-          <img src="assets/img/sponsors/Vanguard.png" class="img-rounded img-responsive sponsor-lg" alt="Vanguard" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://ultrapress.com/" target="_blank">
+              <img src="assets/img/sponsors/UltraPress-1.png" class="img-rounded img-responsive sponsor-lg" alt="UltraPress" />
+            </a>
+          </div>
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <img src="assets/img/sponsors/DRS.png" class="img-rounded img-responsive sponsor-lg" alt="DRS" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://engineering.ucmerced.edu/" target="_blank">
+              <img src="assets/img/sponsors/UCM.png" class="img-rounded img-responsive sponsor-lg" alt="UC Merced" />
+            </a>
+          </div>
         </div>
-        <div class="col">
-          <img src="assets/img/sponsors/OSL.jpeg" class="img-rounded img-responsive sponsor-md" alt="OSL" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <img src="assets/img/sponsors/DataStack.webp" id="DS_img" class="img-rounded img-responsive sponsor-md" alt="DataStack" title="DataStack" />
+          </div>
         </div>
-        <div class="col">
-          <img src="assets/img/sponsors/UCM_IT.png" class="img-rounded img-responsive sponsor-md" alt="IT" />
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://engr-advising.ucmerced.edu/e-week" target="_blank">
+              <img src="assets/img/sponsors/Vanguard-1.png" class="img-rounded img-responsive sponsor-lg" alt="Vanguard" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://asucm.ucmerced.edu/" target="_blank">
+              <img src="assets/img/sponsors/ASUCM.png" class="img-rounded img-responsive sponsor-lg" alt="ASUCM" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://it.ucmerced.edu/node/1" target="_blank">
+              <img src="assets/img/sponsors/UCM_IT.png" id="UCMIT_img" class="img-rounded img-responsive sponsor-md" alt="IT" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="zoom">
+            <a href="https://studentlife.ucmerced.edu/" target="_blank">
+              <img src="assets/img/sponsors/OSL.jpeg" class="img-rounded img-responsive sponsor-md" alt="OSL" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
