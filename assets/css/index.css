@@ -7422,9 +7422,11 @@ textarea.form-control {
 }
 
 .img-rounded {
-  border-radius: 12px;
+  display: inline-block;
+  border-radius: 10px;
   transition: opacity 0.5s ease 0s;
   max-width: 100%;
+  /* height: 100px; */
 }
 
 #DS_img {
@@ -9565,7 +9567,7 @@ video {
   width: 100%;
 }
 
-.card-image .img-raised {
+.card-image .ised {
   margin-top: -20px;
 }
 
@@ -15522,6 +15524,28 @@ License - nucleoapp.com/license/
   content: "\ea64";
 }
 
+
 /* all icon font classes list here */
 
 /*# sourceMappingURL=kit-pro.css.map */
+
+
+@media only screen and (max-width: 991px) {
+  .navbar-toggler {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+  }
+
+  .presentation-page .presentation-title {
+    font-size: 4em;
+  }
+}
+
+.section.text-center.landing-section {
+  background: linear-gradient(to top, #262423 0%, #273763 30%);
+}
+
+#DS_img {
+  border-radius: 50%;
+}
