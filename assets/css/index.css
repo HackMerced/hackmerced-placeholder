@@ -15528,3 +15528,28 @@ License - nucleoapp.com/license/
 /* all icon font classes list here */
 
 /*# sourceMappingURL=kit-pro.css.map */
+
+
+@media only screen and (max-width: 991px) {
+  .navbar-toggler { 
+    position: fixed;
+    right: 0px;
+    top: 0px;
+  }
+
+  .presentation-page .presentation-title {
+    font-size: 4em;
+  }
+
+  #partB {
+    margin-left: 25%;
+  }
+}
+
+.section.text-center.landing-section {
+  background: linear-gradient(to top, #262423 0%, #273763 30%);
+}
+
+#DS_img {
+  border-radius: 50%;
+}
