@@ -1,1 +1,4 @@
-<?php include_once("index.html"); ?>
+<?php
+Header("HTTP/1.1 301 Moved Permanently");
+Header("Location: http://hackmerced.io");
+?>
